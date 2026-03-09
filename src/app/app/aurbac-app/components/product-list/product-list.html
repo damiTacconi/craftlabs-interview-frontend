@@ -1,0 +1,11 @@
+<p>product-list works!</p>
+
+<ul *ngIf="products$ | async as products; else noData">
+  <li *ngFor="let product of products">
+    {{ product.name }} - ${{ product.price }}
+  </li>
+</ul>
+
+<ng-template #noData>
+  <p>No products loaded</p>
+</ng-template>
