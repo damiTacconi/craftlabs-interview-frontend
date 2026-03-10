@@ -1,6 +1,5 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { ProductList } from './app/aurbac-app/components/product-list/product-list';
+import { ProductList } from '@components/product-list/product-list'
 
 @Component({
   selector: 'app-root',
